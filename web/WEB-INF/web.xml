@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>java</servlet-name>
+        <servlet-class>AddItemServlet.java</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddItemServlet</servlet-name>
+        <servlet-class>work.AddItemServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewCartServlet</servlet-name>
+        <servlet-class>work.ViewCartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveItemServlet</servlet-name>
+        <servlet-class>work.RemoveItemServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClearCartServlet</servlet-name>
+        <servlet-class>work.ClearCartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>java</servlet-name>
+        <url-pattern>/java</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddItemServlet</servlet-name>
+        <url-pattern>/AddItemServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewCartServlet</servlet-name>
+        <url-pattern>/ViewCartServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveItemServlet</servlet-name>
+        <url-pattern>/RemoveItemServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClearCartServlet</servlet-name>
+        <url-pattern>/ClearCartServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
